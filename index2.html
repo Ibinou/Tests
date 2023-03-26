@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Exemple d'utilisation de UAParser.js</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ua-parser-js/0.7.28/ua-parser.min.js"></script>
+  <script>
+    var parser = new UAParser();
+    var result = parser.getResult();
+    var deviceInfo = document.getElementById("device-info");
+    deviceInfo.innerHTML = "Vous utilisez un " + result.device.model + " sous " + result.os.name;
+  </script>
+</head>
+<body>
+  <p id="device-info">Informations sur l'appareil</p>
+</body>
+</html>
