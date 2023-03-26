@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      /* Règle pour les écrans de taille iPad */
+      @media only screen 
+        and (min-device-width : 768px) 
+        and (max-device-width : 1024px) {
+          /* Afficher l'image pour l'iPad */
+          #produit-image {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d8/IPad_Pro_11_mockup.png');
+          }
+      }
+
+      /* Règle pour les écrans de taille iPhone */
+      @media only screen 
+        and (min-device-width : 320px) 
+        and (max-device-width : 568px) {
+          /* Afficher l'image pour l'iPhone */
+          #produit-image {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/8d/IPad_Air.png');
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="produit-image"></div>
+  </body>
+</html>
