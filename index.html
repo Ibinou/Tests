@@ -1,1 +1,31 @@
-fqf
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Affichage de l'user agent du navigateur</title>
+</head>
+<body>
+
+
+<style>
+  
+body {
+  background-color: #1c1c1c;
+}
+p {
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+   font-size: 16px;
+}
+</style>
+
+
+
+
+  <div id="userAgent"></div>
+  <script>
+    const userAgent = navigator.userAgent;
+    const userAgentElement = document.getElementById("userAgent");
+    userAgentElement.innerHTML = "<p>User agent : " + userAgent + "</p>";
+  </script>
+</body>
+</html>
+
